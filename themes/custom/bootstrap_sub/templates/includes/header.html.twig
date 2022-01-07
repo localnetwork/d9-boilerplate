@@ -1,0 +1,28 @@
+<header id="header" class="header site-header mb-5">
+    {% if is_front %}
+        <h1 class="sr-only d-none hidden visually-hidden" hidden>{{ site_name }}</h1>
+    {% endif %}
+    {% if page.top_header %}
+    <div class="region-top-strip bg-secondary">
+        <div class="container d-flex flex-row-reverse align-items-center pt-3 pb-3">
+        {{ page.top_header }}
+        </div> 
+    </div>
+    {% endif %} 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <a class="navbar-brand" href="{{ path('<front>') }}">
+            <img src="/{{ directory }}/logo.png" width="50" alt="Logo">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+
+        <div class="navbar-collapse collapse">
+            <div class="d-sm-inline-flex flex-row-reverse w-100">
+            {{ page.primary_menu }}
+            </div>
+        </div>
+        </div>
+    </nav>
+</header>

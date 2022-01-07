@@ -1,0 +1,26 @@
+<footer class="site-footer">
+    {% block footer %}
+        {% if page.footer %}
+        <div class="footer-top bg-light py-4">
+            <div class="container">
+            {{ page.footer }} 
+            </div> 
+        </div>   
+        {% endif %} 
+    {% endblock %}
+    
+    <div class="footer-bottom bg-secondary text-white pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col copyright">
+                    <p>&copy; {{ now|date('Y') }} {{ site_name }}</p> 
+                </div>
+                <div class="col developed text-end">
+                    <p>
+                        <a class="text-primary" href="https://halcyonwebdesign.com.ph/" target="_blank">Web Design by: Halcyon Web Design</a>
+                    </p>
+                </div> 
+            </div> 
+        </div>
+    </div> 
+</footer>  

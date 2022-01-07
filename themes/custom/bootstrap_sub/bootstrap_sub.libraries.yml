@@ -1,0 +1,17 @@
+global-styling:
+  version: VERSION
+  js: 
+    # js/bootstrap.min.js: { weight: -48 }
+    libraries/bootstrap/dist/js/bootstrap.min.js: {}
+    libraries/bootstrap/dist/js/bootstrap.bundle.min.js: {}
+    # libraries/popperjs/popper.min.js: {} 
+    js/barrio.js: {}
+    js/custom.js: {}
+  css:
+    component:
+      # libraries/bootstrap-icons/font/bootstrap-icons.css: {} # Optional for bootstrap icons, uncomment to use it.
+      libraries/bootstrap/dist/css/bootstrap.min.css: {}
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

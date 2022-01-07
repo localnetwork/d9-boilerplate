@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements template_preprocess_page().
+ */
+function bootstrap_sub_preprocess_page(&$variables) {
+  // Load the site name out of configuration.
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
+}
